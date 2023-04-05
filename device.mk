@@ -164,8 +164,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor \
-    vendor.xiaomi.hardware.displayfeature@1.0.vendor
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
@@ -258,10 +257,6 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.spes
 
 # Media
 PRODUCT_PACKAGES += \
@@ -359,7 +354,6 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.usb.sh \
     init.qcom.post_boot.sh \
-    init.qti.early_init.sh \
     init.qcom.class_core.sh
 
 PRODUCT_PACKAGES += \
@@ -456,6 +450,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+# Overlays
+$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/messi/messi-vendor.mk)
