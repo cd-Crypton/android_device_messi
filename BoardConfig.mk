@@ -100,6 +100,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_CONFIG := $(PRODUCT_PLATFORM)_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/messi
+TARGET_BOARD_KERNEL_HEADERS += device/realme/prebuilt/kernel-headers
 
 # Kernel (Prebuilt)
 TARGET_FORCE_PREBUILT_KERNEL := true
