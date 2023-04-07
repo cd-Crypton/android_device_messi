@@ -31,7 +31,7 @@ cc_library {
 cc_library_shared {
     name: "librecovery_updater",
     srcs: [
-        "vendor/realme/messi/proprietary/vendor/lib/librecovery_updater.so,
+        "vendor/realme/messi/proprietary/vendor/lib/librecovery_updater.so",
     ],
     include_dirs: [
         "vendor/realme/messi",
