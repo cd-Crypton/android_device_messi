@@ -26,3 +26,18 @@ cc_library {
     ],
     export_include_dirs: ["."],
 }
+
+
+cc_library_shared {
+    name: "librecovery_updater",
+    srcs: [
+        "vendor/realme/messi/proprietary/vendor/lib/librecovery_updater.so,
+    ],
+    include_dirs: [
+        "vendor/realme/messi",
+    ],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+    ],
+}
