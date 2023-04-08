@@ -1298,6 +1298,9 @@ vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib6
+/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
 
 # Display configs
 vendor/etc/ltm_config_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
