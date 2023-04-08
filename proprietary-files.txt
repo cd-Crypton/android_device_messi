@@ -969,8 +969,6 @@ system_ext/lib/vendor.qti.hardware.data.connection@1.1.so
 system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.1.so
 system_ext/lib/vendor.qti.hardware.data.flow@1.0.so
-system_ext/lib/vendor.qti.hardware.data.iwlan@1.0.so
-system_ext/lib/vendor.qti.hardware.data.iwlan@1.1.so
 system_ext/lib/vendor.qti.hardware.data.latency@1.0.so
 system_ext/lib/vendor.qti.hardware.data.lce@1.0.so
 system_ext/lib/vendor.qti.hardware.data.qmi@1.0.so
@@ -1005,8 +1003,7 @@ system_ext/lib64/vendor.qti.hardware.data.connection@1.1.so
 system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so
 system_ext/lib64/vendor.qti.hardware.data.flow@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.iwlan@1.1.so
+
 system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.lce@1.0.so
 system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
@@ -1872,7 +1869,7 @@ system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so
 system_ext/lib64/vendor.qti.hardware.radio.uim@1.2.so
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/app/IWlanService/IWlanService.apk
+
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
