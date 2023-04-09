@@ -318,6 +318,11 @@ PRODUCT_PACKAGES += \
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.emmc_ramdisk \
+    fstab.default_ramdisk
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
