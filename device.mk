@@ -77,6 +77,10 @@ BOARD_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -104,8 +108,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1 \
-    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0 \
     android.hardware.bluetooth.a2dp@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
