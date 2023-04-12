@@ -391,6 +391,12 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+PRODUCT_HOST_PACKAGES += \
+    brillo_update_payload
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.2.vendor
