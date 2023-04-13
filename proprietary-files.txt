@@ -1595,7 +1595,6 @@ vendor/lib64/libApeSwDec.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so
 vendor/lib64/libFlacSwDec.so
-vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libVkLayer_q3dtools.so
