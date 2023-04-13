@@ -1,3 +1,5 @@
+# Product Properties
+
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
@@ -9,4 +11,3 @@ audio.sys.routing.latency=0
 media.stagefright.audio.deep=false
 persist.sys.usb.config=none
 ro.af.client_heap_size_kbyte=7168
-ro.product.ab_ota_partitions=system,system_ext,product,vbmeta_system
