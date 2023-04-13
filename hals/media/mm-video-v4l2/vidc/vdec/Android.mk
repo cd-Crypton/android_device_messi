@@ -64,6 +64,7 @@ include $(CLEAR_VARS)
 libmm-vdec-inc          := $(LOCAL_PATH)/inc
 libmm-vdec-inc          += $(LIBION_HEADER_PATHS)
 libmm-vdec-inc          += $(TOP)/device/realme/messi/hals/media/mm-video-v4l2/vidc/common/inc
+libmm-vdec-inc          += $(TOP)/device/realme/messi/hals/media/mm-video-v4l2/vidc/vdec/inc
 libmm-vdec-inc          += $(TOP)/device/realme/messi/hals/media/mm-core/inc
 libmm-vdec-inc          += device/realme/messi/hals/media/libplatformconfig
 libmm-vdec-inc          += $(TARGET_OUT_HEADERS)/adreno

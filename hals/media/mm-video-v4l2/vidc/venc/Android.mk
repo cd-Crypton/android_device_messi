@@ -58,6 +58,7 @@ libmm-venc-def += -DUSE_CAMERA_METABUFFER_UTILS
 libmm-venc-inc      := $(LOCAL_PATH)/inc
 libmm-venc-inc      += $(LIBION_HEADER_PATHS)
 libmm-venc-inc      += $(TOP)/device/realme/messi/hals/media/mm-video-v4l2/vidc/common/inc
+libmm-venc-inc      += $(TOP)/device/realme/messi/hals/media/mm-video-v4l2/vidc/venc/inc
 libmm-venc-inc      += device/realme/messi/hals/media/mm-core/inc
 libmm-venc-inc      += device/realme/messi/hals/media/libstagefrighthw
 libmm-venc-inc      += device/realme/messi/hals/media/libplatformconfig
