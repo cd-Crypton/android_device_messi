@@ -251,8 +251,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 # Lights
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.lights.service
+#PRODUCT_PACKAGES += \
+#    vendor.qti.hardware.lights.service
 
 # Media
 PRODUCT_PACKAGES += \
