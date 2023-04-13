@@ -251,8 +251,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 # Lights
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.lights.service
+#PRODUCT_PACKAGES += \
+#    vendor.qti.hardware.lights.service
 
 # Media
 PRODUCT_PACKAGES += \
@@ -328,7 +328,7 @@ PRODUCT_PACKAGES += \
 
 # Reserve
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/ueventd.reserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.reserve.rc
+    $(LOCAL_PATH)/rootdir/etc/ueventd.reserve.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.reserve.rc
 
 # RIL
 PRODUCT_PACKAGES += \
