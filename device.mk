@@ -326,6 +326,10 @@ PRODUCT_PACKAGES += \
     fstab.emmc_ramdisk \
     fstab.default_ramdisk
 
+# Reserve
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/ueventd.reserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.reserve.rc
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
