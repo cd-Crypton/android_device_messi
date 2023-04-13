@@ -34,6 +34,21 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a9
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
+# Audio
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
+AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
+AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
+AUDIO_FEATURE_ENABLED_HDMI_SPK := true
+AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+BOARD_SUPPORTS_SOUND_TRIGGER := true
+TARGET_PROVIDES_AUDIO_EXTNS := true
+USE_CUSTOM_AUDIO_POLICY := 1
+
+
 # Block Size
 BOARD_FLASH_BLOCK_SIZE := 262144
 
@@ -75,6 +90,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 # Configs (Manifest)
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
      $(DEVICE_PATH)/configs/manifest/framework_compatibility_matrix.xml
+     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/manifest/compatibility_matrix.xml
 
@@ -140,7 +156,7 @@ BOARD_USES_METADATA_PARTITION := true
 TARGET_BOARD_PLATFORM := bengal
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
