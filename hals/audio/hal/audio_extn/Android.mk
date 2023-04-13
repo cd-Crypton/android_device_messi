@@ -42,7 +42,7 @@ LOCAL_CFLAGS += \
     -Wall \
     -Werror \
     -Wno-unused-function \
-    -Wno-unused-variable \
+    -Wno-unused-variable
 
 LOCAL_SHARED_LIBRARIES := \
     libaudioutils \
@@ -109,7 +109,7 @@ ifneq ($(filter sdm845 sdm710 qcs605 sdmshrike msmnile kona lahaina holi lito be
 endif
 
 LOCAL_SRC_FILES:= \
-        compress_capture.c
+    compress_capture.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -177,8 +177,9 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito bengal at
   MULTIPLE_HW_VARIANTS_ENABLED := true
 endif
 
-LOCAL_SRC_FILES:= ssr.c \
-                  device_utils.c
+LOCAL_SRC_FILES += \
+    ssr.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -257,13 +258,13 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito bengal at
 endif
 
 LOCAL_SRC_FILES:= \
-        edid.c
+    edid.c
 
 LOCAL_CFLAGS += \
     -Wall \
     -Werror \
     -Wno-unused-function \
-    -Wno-unused-variable \
+    -Wno-unused-variable
 
 LOCAL_SHARED_LIBRARIES := \
     libaudioutils \
@@ -328,13 +329,13 @@ LOCAL_MODULE_OWNER := third_party
 LOCAL_VENDOR_MODULE := true
 
 LOCAL_SRC_FILES:= \
-        spkr_protection.c
+    spkr_protection.c
 
 LOCAL_CFLAGS += \
     -Wall \
     -Werror \
     -Wno-unused-function \
-    -Wno-unused-variable \
+    -Wno-unused-variable
 
 LOCAL_CFLAGS += -DSPKR_PROT_ENABLED
 
@@ -402,13 +403,13 @@ LOCAL_MODULE_OWNER := third_party
 LOCAL_VENDOR_MODULE := true
 
 LOCAL_SRC_FILES:= \
-        cirrus_playback.c
+    cirrus_playback.c
 
 LOCAL_CFLAGS += \
     -Wall \
     -Werror \
     -Wno-unused-function \
-    -Wno-unused-variable \
+    -Wno-unused-variable
 
 LOCAL_CFLAGS += -DENABLE_CIRRUS_DETECTION
 LOCAL_CFLAGS += -DCIRRUS_FACTORY_CALIBRATION
@@ -473,8 +474,8 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito bengal at
 endif
 
 LOCAL_SRC_FILES:= \
-        a2dp.c \
-        device_utils.c
+    a2dp.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -548,7 +549,7 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito bengal at
 endif
 
 LOCAL_SRC_FILES:= \
-        ext_hw_plugin.c
+    ext_hw_plugin.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -622,8 +623,8 @@ ifeq ($(TARGET_BOARD_AUTO),true)
 endif
 
 LOCAL_SRC_FILES:= \
-        hfp.c \
-        device_utils.c
+    hfp.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -699,8 +700,8 @@ ifeq ($(TARGET_BOARD_AUTO),true)
 endif
 
 LOCAL_SRC_FILES:= \
-        icc.c \
-        device_utils.c
+    icc.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -770,8 +771,8 @@ ifeq ($(TARGET_BOARD_AUTO),true)
 endif
 
 LOCAL_SRC_FILES:= \
-        synth.c  \
-        device_utils.c
+    synth.c  \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -839,8 +840,8 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito bengal at
 endif
 
 LOCAL_SRC_FILES:= \
-        passthru.c \
-        device_utils.c
+    passthru.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -922,7 +923,7 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito bengal at
 endif
 
 LOCAL_SRC_FILES:= \
-        battery_listener.cpp
+    battery_listener.cpp
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -1054,8 +1055,8 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi sdm660 msm8937
 endif
 
 LOCAL_SRC_FILES:= \
-        maxxaudio.c \
-        device_utils.c
+    maxxaudio.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -1120,8 +1121,8 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi sdm660 msm8937
 endif
 
 LOCAL_SRC_FILES:= \
-        audiozoom.c \
-        device_utils.c
+    audiozoom.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -1190,8 +1191,8 @@ ifneq ($(filter sdm845 sdm710 sdmshrike msmnile kona lahaina holi lito atoll ben
 endif
 
 LOCAL_SRC_FILES:= \
-        auto_hal.c \
-        device_utils.c
+    auto_hal.c \
+    device_utils.c
 
 LOCAL_CFLAGS += \
     -Wall \
@@ -1251,20 +1252,20 @@ LOCAL_MODULE := libaudiopowerpolicy
 LOCAL_VENDOR_MODULE := true
 
 LOCAL_SRC_FILES:= \
-        PowerPolicyClient.cpp \
-        power_policy_launcher.cpp
+    PowerPolicyClient.cpp \
+    power_policy_launcher.cpp
 
 LOCAL_C_INCLUDES:= \
-        $(PRIMARY_HAL_PATH) \
-        system/media/audio/include
+    $(PRIMARY_HAL_PATH) \
+    system/media/audio/include
 
 LOCAL_SHARED_LIBRARIES:= \
-        android.frameworks.automotive.powerpolicy-V1-ndk \
-        libbase \
-        libbinder_ndk \
-        libcutils \
-        liblog \
-        libpowerpolicyclient
+    android.frameworks.automotive.powerpolicy-V1-ndk \
+    libbase \
+    libbinder_ndk \
+    libcutils \
+    liblog \
+    libpowerpolicyclient
 
 ifneq ($(filter kona lahaina holi,$(TARGET_BOARD_PLATFORM)),)
 LOCAL_SANITIZE := integer_overflow
