@@ -1,7 +1,7 @@
 ifneq ($(strip $(TARGET_PROVIDES_AUDIO_EXTNS)),true)
 
 #AudioHal-primaryHal-Hal path
-ifneq ($(BOARD_OPENSOURCE_DIR), )
+ifneq ($(BOARD_OPENSOURCE_DIR),)
   PRIMARY_HAL_PATH := $(BOARD_OPENSOURCE_DIR)/audio-hal/primary-hal/hal
   AUDIO_KERNEL_INC := $(TARGET_OUT_INTERMEDIATES)/$(BOARD_OPENSOURCE_DIR)/audio-kernel/include
 else
@@ -36,7 +36,7 @@ LOCAL_VENDOR_MODULE := true
 AUDIO_PLATFORM := $(TARGET_BOARD_PLATFORM)
 
 LOCAL_SRC_FILES:= \
-        sndmonitor.c
+    sndmonitor.c
 
 LOCAL_CFLAGS += \
     -Wall \
