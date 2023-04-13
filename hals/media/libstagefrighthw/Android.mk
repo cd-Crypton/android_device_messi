@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    QComOMXPlugin.cpp                      \
+    QComOMXPlugin.cpp
 
 LOCAL_CFLAGS := $(PV_CFLAGS_MINUS_VISIBILITY)
 
@@ -39,14 +39,14 @@ LOCAL_CFLAGS += -DUSE_NATIVE_HANDLE_SOURCE
 endif
 
 LOCAL_HEADER_LIBRARIES := \
-        media_plugin_headers \
-        libcutils_headers \
-        libutils_headers
+    media_plugin_headers \
+    libcutils_headers \
+    libutils_headers
 
-LOCAL_SHARED_LIBRARIES :=       \
-        libutils                \
-        libcutils               \
-        libdl                   \
+LOCAL_SHARED_LIBRARIES := \
+    libutils \
+    libcutils \
+    libdl
 
 LOCAL_MODULE := libstagefrighthw
 

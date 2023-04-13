@@ -37,8 +37,10 @@ LOCAL_CPPFLAGS += --coverage -fprofile-arcs -ftest-coverage
 LOCAL_STATIC_LIBRARIES += libprofile_rt
 endif
 
-LOCAL_HEADER_LIBRARIES := libsystem_headers \
-                          libhardware_headers
+LOCAL_HEADER_LIBRARIES := \
+    libsystem_headers \
+    libhardware_headers
+    
 LOCAL_SHARED_LIBRARIES := \
     libcutils \
     liblog \
