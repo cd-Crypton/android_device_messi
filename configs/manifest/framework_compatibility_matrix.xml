@@ -120,8 +120,18 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.display.mapper</name>
+        <version>2.0</version>
+        <version>3.0</version>
+        <version>4.0</version>
+        <interface>
+            <name>IMapper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.display.mapper</name>
-        <version>2.1</version>
+        <version>2.0</version>
         <version>3.0</version>
         <version>4.0</version>
         <interface>
@@ -418,7 +428,7 @@
         <version>1.0</version>
         <interface>
             <name>IQspmhal</name>
-            <instance>defaultti.qspmhal@1.0</instance>
+            <instance>default</instance>
         </interface>
     </hal>
 </compatibility-matrix>
