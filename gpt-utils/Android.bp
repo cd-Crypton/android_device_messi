@@ -4,23 +4,29 @@
 //
 
 cc_defaults {
-    name: "libgptutils.messi",
-    owner: "qti",
-    vendor: true,
+    name: "libgptutils.oplus",
+    export_include_dirs: ["."],
+    header_libs: ["generated_kernel_headers"],
     recovery_available: true,
     shared_libs: [
         "libcutils",
         "liblog",
         "libz",
     ],
-    cflags: [
-        "-Wall",
-        "-Werror",
-    ],
     srcs: [
         "gpt-utils.cpp",
         "recovery-ufs-bsg.cpp",
     ],
-    export_include_dirs: ["."],
-    header_libs: ["generated_kernel_headers"],
+    vendor: true,
+}
+
+cc_library {
+    name: "libgptutils-sg.oplus",
+    defaults: ["libgptutils.oplus"],
+}
+
+cc_library {
+    name: "libgptutils-bsg.oplus",
+    defaults: ["libgptutils.oplus"],
+    cflags: ["-D_BSG_FRAMEWORK_KERNEL_HEADERS"],
 }
