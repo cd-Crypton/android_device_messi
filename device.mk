@@ -358,8 +358,7 @@ PRODUCT_PACKAGES += \
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oplus \
-    hardware/qcom-caf/sm6225
+    hardware/oplus
     
 # Telephony
 PRODUCT_PACKAGES += \
