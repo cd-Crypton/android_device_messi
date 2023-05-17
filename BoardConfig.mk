@@ -77,6 +77,7 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 # Build (Workaround)
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Copy Out
 TARGET_COPY_OUT_ODM := odm
@@ -184,7 +185,9 @@ USE_SENSOR_MULTI_HAL := true
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
