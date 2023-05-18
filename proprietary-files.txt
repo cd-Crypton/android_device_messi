@@ -1,4 +1,4 @@
-# Necessary blobs are extracted from RMX3521_11.A.31_0310_202212152204
+# Necessary blobs are extracted from RMX3521_11_C.10 (latest)
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -487,9 +487,7 @@ vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
 
 # DRM (Widevine) 
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/libwvhidl.so
 
@@ -694,21 +692,12 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # QCC
-system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.1-service.rc
-system_ext/lib/hw/vendor.qti.hardware.qccsyshal@1.0-impl.so
-system_ext/lib/hw/vendor.qti.hardware.qccsyshal@1.1-impl.so
 system_ext/lib/libqcc_file_agent_sys.so
-system_ext/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so
 system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so
-system_ext/lib/vendor.qti.hardware.qccsyshal@1.1-halimpl.so
 system_ext/lib/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib/vendor.qti.hardware.qccvndhal@1.0.so
-system_ext/lib64/hw/vendor.qti.hardware.qccsyshal@1.0-impl.so
-system_ext/lib64/hw/vendor.qti.hardware.qccsyshal@1.1-impl.so
 system_ext/lib64/libqcc_file_agent_sys.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
@@ -1180,7 +1169,6 @@ vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/vendor.oplus.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.oplus.hardware.wifi.powersystem@1.0.so
 vendor/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
@@ -1699,7 +1687,6 @@ vendor/lib64/libqtigef.so
 vendor/lib64/librcmask.so
 vendor/lib64/librecovery_updater.so
 vendor/lib64/libreffeature.so
-vendor/lib64/librfapis.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
