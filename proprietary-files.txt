@@ -1,4 +1,4 @@
-# Necessary blobs are extracted from RMX3521_11_C.10 (latest)
+# Necessary blobs are extracted from RMX3521_11_C.13 (latest)
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
