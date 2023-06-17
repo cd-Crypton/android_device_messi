@@ -87,13 +87,11 @@ vendor/lib64/libaudio_log_utils.so
 odm/lib/soundfx/libdiraceffect.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
@@ -675,7 +673,6 @@ vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/powerhint.xml
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-util.so
 
 # Perf IOP
