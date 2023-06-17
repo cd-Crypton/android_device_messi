@@ -122,6 +122,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_BASE := 0x00000000
+BOARD_DTB_OFFSET := 0x01f00000
 
 # Kernel (Command-line)
 BOARD_KERNEL_CMDLINE += \
@@ -138,18 +139,16 @@ BOARD_KERNEL_CMDLINE += \
     androidboot.console=ttyMSM0 \
     androidboot.memcg=1 \
     androidboot.selinux=permissive
- 
-# Kernel (Prebuilt)
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-BOARD_INCLUDE_RECOVERY_DTBO := true
- 
+
 # Kernel (Source)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_INCLUDE_RECOVERY_DTBO := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := vendor/$(PRODUCT_PLATFORM)-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/messi
 TARGET_KERNEL_LLVM_BINUTILS := false
@@ -160,7 +159,8 @@ BOARD_MKBOOTIMG_ARGS += \
     --header_version $(BOARD_BOOTIMG_HEADER_VERSION) \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) \
-    --dtb $(TARGET_PREBUILT_DTB)
+    --dtb_offset $(BOARD_DTB_OFFSET) \
+    --board ""
 
 # Platform
 BOARD_VENDOR := $(PRODUCT_BRAND)
