@@ -138,7 +138,8 @@ BOARD_KERNEL_CMDLINE += \
     androidboot.hardware=qcom \
     androidboot.console=ttyMSM0 \
     androidboot.memcg=1 \
-    androidboot.selinux=permissive
+    androidboot.selinux=permissive \
+    androidboot.init_fatal_reboot_target=recovery
 
 # Kernel (Source)
 TARGET_KERNEL_ARCH := arm64
